@@ -20,7 +20,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="rouge_score",
-    version="0.0.4",
+    version="0.0.5",
     author="Google LLC",
     author_email="no-reply@google.com",
     description="Pure python implementation of ROUGE-1.5.5.",
