@@ -21,7 +21,7 @@ and overriding the tokenize() method.
 """
 import abc
 from nltk.stem import porter
-from rouge import tokenize_lib
+from rouge_score import tokenize_lib
 
 
 class Tokenizer(abc.ABC):

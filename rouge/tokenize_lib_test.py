@@ -20,7 +20,7 @@ from __future__ import division
 from __future__ import print_function
 
 from absl.testing import absltest
-from rouge import tokenize_lib
+from rouge_score import tokenize_lib
 
 
 class TokenizeTest(absltest.TestCase):
