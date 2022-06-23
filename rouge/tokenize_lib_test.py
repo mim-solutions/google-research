@@ -13,23 +13,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Tests for tokenize."""
+"""Tests for tokenize_lib."""
 
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
 from absl.testing import absltest
-from rouge import tokenize
+from rouge import tokenize_lib
 
 
 class TokenizeTest(absltest.TestCase):
 
   def test_give_me_a_name(self):
     self.assertEqual(['one', 'two', 'three'],
-                     tokenize.tokenize('one Two three', None))
+                     tokenize_lib.tokenize('one Two three', None))
     self.assertEqual(['one', 'two', 'three'],
-                     tokenize.tokenize('one\n Two \nthree', None))
+                     tokenize_lib.tokenize('one\n Two \nthree', None))
 
 
 if __name__ == '__main__':

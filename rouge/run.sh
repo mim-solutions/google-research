@@ -20,6 +20,11 @@ virtualenv -p python3 .
 source ./bin/activate
 
 pip install -r rouge/requirements.txt
+
+
+python -c "import nltk; nltk.download('punkt')"
 python -m rouge.io_test
 python -m rouge.rouge_scorer_test
 python -m rouge.scoring_test
+python -m rouge.tokenize_lib_test
+python -m rouge.tokenizers_test
