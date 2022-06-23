@@ -1,5 +1,26 @@
 # Python ROUGE Implementation
 
+## Installation
+
+```
+pip install -e "git+https://github.com/mim-solutions/google-research.git#egg=rouge_score&subdirectory=rouge
+```
+
+## Fork
+
+The original repo (https://github.com/google-research/google-research) was forked
+due to problems with installing it:
+
+* version available in pip (https://pypi.org/project/rouge-score/) is outdated,
+* version from master failed to install: it had file `tokenize.py` and it hide standard library module `tokenize`, 
+so installation scripts failed with error like: 
+
+```
+File "/home/jupyter-apacuk/.conda/envs/encoder_decoder/lib/python3.8/linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+AttributeError: module 'tokenize' has no attribute 'open'
+```
+
 ## Overview
 
 This is a native python implementation of ROUGE, designed to replicate results
